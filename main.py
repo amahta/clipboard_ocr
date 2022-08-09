@@ -2,9 +2,8 @@ import argparse
 import json
 import sys
 
-from PIL import ImageGrab, Image
-
 import pytesseract
+from PIL import ImageGrab, Image
 
 CMD_SYS_VERSION = 0
 CMD_SET_OCR = 10
@@ -23,12 +22,12 @@ def run(command):
     elif command["cmd"] == CMD_OCR_CLIPBOARD:
         img = ImageGrab.grabclipboard()
         if isinstance(img, Image.Image):
-            return{
+            return {
                 "success": True,
                 "result": pytesseract.image_to_string(img),
             }
         else:
-            return{
+            return {
                 "success": False,
             }
 
@@ -51,4 +50,3 @@ if __name__ == "__main__":
             result = {"exception": e.__str__()}
         result = json.dumps(result)
         print(stream_start + result + stream_end)
-

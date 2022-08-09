@@ -1,0 +1,5 @@
+{
+  "python_command": "python",
+  "tesseract_path": "C:/Program Files/Tesseract-OCR/tesseract.exe",
+  "check_interval": 1500
+}
