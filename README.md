@@ -1,16 +1,20 @@
-# clipboard_ocr
+# Clipboard OCR
 
 Run Tesseract OCR on clipboard contents.
 
-## Getting Started
+# Installation
 
-This project is a starting point for a Flutter application.
+Simply grab the latest release from the releases page:
 
-A few resources to get you started if this is your first Flutter project:
+https://github.com/amahta/clipboard_ocr/releases
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to use
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This application will automatically perform OCR on the contents of the clipboard.
+
+For example, a typical use case on Windows would be to:
+* Press WIN+SHIFT+S to snap a screenshot from a selected portion of the screen.
+* Wait for the Clipboard OCR app to recognize it
+* Click on the text in Clipboard OCR to automatically copy it to Clipboard
+
+Hence, you'll end up with the actual text contents of whatever you snapped from the screen. 
