@@ -15,13 +15,14 @@ As it is mentioned in the description of releases, Clipboard OCR depends on a se
 Here is a list of them:
 
 * Microsoft Visual C++ Redistributables
-* Python
+* Python (and pytesseract package in particular)
 * Tesseract OCR
 
 And here is where you can get them:
 
 * https://aka.ms/vs/17/release/vc_redist.x64.exe
 * https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe
+* https://pypi.org/project/pytesseract/
 * https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.2.0.20220712.exe
 
 ## How to use
